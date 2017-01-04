@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F7B3D73BFDD5585C4DCB277 /* Pods_FootyFan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7DCEC83E217CA84DBE8107 /* Pods_FootyFan.framework */; };
+		9A24AD581E0EA74B000103A7 /* BusinessLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A24AD571E0EA74B000103A7 /* BusinessLayer.swift */; };
+		9A24AD5C1E0EA77F000103A7 /* CommunicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A24AD5B1E0EA77F000103A7 /* CommunicationManager.swift */; };
+		9A24AD5F1E0EA7CC000103A7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A24AD5E1E0EA7CC000103A7 /* Constants.swift */; };
+		9A24AD621E0EA82E000103A7 /* SwiftLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A24AD611E0EA82E000103A7 /* SwiftLoader.swift */; };
+		9A24AD651E0EA846000103A7 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A24AD641E0EA846000103A7 /* Reachability.swift */; };
+		9A24AD6A1E0EA89E000103A7 /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A24AD691E0EA89E000103A7 /* JSONHelper.swift */; };
+		9A24AD6C1E0EA8AA000103A7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A24AD6B1E0EA8AA000103A7 /* User.swift */; };
+		9A3DA1611E1646700048D8F1 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3DA1601E1646700048D8F1 /* Helper.swift */; };
+		9A3DA1631E16467D0048D8F1 /* AppInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3DA1621E16467D0048D8F1 /* AppInstance.swift */; };
 		9AAFDA611E0B0AB50005FA45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAFDA601E0B0AB50005FA45 /* AppDelegate.swift */; };
 		9AAFDA631E0B0AB50005FA45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAFDA621E0B0AB50005FA45 /* ViewController.swift */; };
 		9AAFDA661E0B0AB50005FA45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AAFDA641E0B0AB50005FA45 /* Main.storyboard */; };
@@ -14,6 +24,9 @@
 		9AAFDA6B1E0B0AB50005FA45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AAFDA691E0B0AB50005FA45 /* LaunchScreen.storyboard */; };
 		9AAFDA761E0B0AB50005FA45 /* FootyFanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAFDA751E0B0AB50005FA45 /* FootyFanTests.swift */; };
 		9AAFDA811E0B0AB50005FA45 /* FootyFanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAFDA801E0B0AB50005FA45 /* FootyFanUITests.swift */; };
+		9AC1ECF41E1C1FE300A243D1 /* CustomTextfieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1ECF31E1C1FE300A243D1 /* CustomTextfieldView.swift */; };
+		9AC1ECF61E1C27F900A243D1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1ECF51E1C27F900A243D1 /* SignUpViewController.swift */; };
+		9AC1ECF81E1C31AF00A243D1 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1ECF71E1C31AF00A243D1 /* ForgotPasswordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +47,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A24AD571E0EA74B000103A7 /* BusinessLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessLayer.swift; sourceTree = "<group>"; };
+		9A24AD5B1E0EA77F000103A7 /* CommunicationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunicationManager.swift; sourceTree = "<group>"; };
+		9A24AD5E1E0EA7CC000103A7 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9A24AD611E0EA82E000103A7 /* SwiftLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftLoader.swift; sourceTree = "<group>"; };
+		9A24AD641E0EA846000103A7 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		9A24AD691E0EA89E000103A7 /* JSONHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
+		9A24AD6B1E0EA8AA000103A7 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9A3DA1601E1646700048D8F1 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		9A3DA1621E16467D0048D8F1 /* AppInstance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInstance.swift; sourceTree = "<group>"; };
 		9AAFDA5D1E0B0AB50005FA45 /* FootyFan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootyFan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AAFDA601E0B0AB50005FA45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AAFDA621E0B0AB50005FA45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +69,13 @@
 		9AAFDA7C1E0B0AB50005FA45 /* FootyFanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FootyFanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AAFDA801E0B0AB50005FA45 /* FootyFanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootyFanUITests.swift; sourceTree = "<group>"; };
 		9AAFDA821E0B0AB50005FA45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AC1ECF31E1C1FE300A243D1 /* CustomTextfieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextfieldView.swift; sourceTree = "<group>"; };
+		9AC1ECF51E1C27F900A243D1 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		9AC1ECF71E1C31AF00A243D1 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		9AC1ECFA1E1C362C00A243D1 /* FootyFan-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FootyFan-Bridging-Header.h"; sourceTree = "<group>"; };
+		C581ED96AE0CDFE3B63AB674 /* Pods-FootyFan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FootyFan.release.xcconfig"; path = "Pods/Target Support Files/Pods-FootyFan/Pods-FootyFan.release.xcconfig"; sourceTree = "<group>"; };
+		FA7DCEC83E217CA84DBE8107 /* Pods_FootyFan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FootyFan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDDA084CE49E8EEC16B39F30 /* Pods-FootyFan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FootyFan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FootyFan/Pods-FootyFan.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F7B3D73BFDD5585C4DCB277 /* Pods_FootyFan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +104,92 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		752626129D61974432FD7EAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA7DCEC83E217CA84DBE8107 /* Pods_FootyFan.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A24AD561E0EA723000103A7 /* BusinessLayer */ = {
+			isa = PBXGroup;
+			children = (
+				9A24AD571E0EA74B000103A7 /* BusinessLayer.swift */,
+			);
+			name = BusinessLayer;
+			sourceTree = "<group>";
+		};
+		9A24AD5A1E0EA770000103A7 /* CommunicationManager */ = {
+			isa = PBXGroup;
+			children = (
+				9A24AD5B1E0EA77F000103A7 /* CommunicationManager.swift */,
+			);
+			name = CommunicationManager;
+			sourceTree = "<group>";
+		};
+		9A24AD5D1E0EA7A4000103A7 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				9A24AD5E1E0EA7CC000103A7 /* Constants.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		9A24AD601E0EA820000103A7 /* OtherLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				9A3DA1621E16467D0048D8F1 /* AppInstance.swift */,
+				9A24AD691E0EA89E000103A7 /* JSONHelper.swift */,
+				9A24AD611E0EA82E000103A7 /* SwiftLoader.swift */,
+				9A3DA1601E1646700048D8F1 /* Helper.swift */,
+			);
+			name = OtherLibraries;
+			sourceTree = "<group>";
+		};
+		9A24AD631E0EA837000103A7 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				9A24AD641E0EA846000103A7 /* Reachability.swift */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		9A24AD661E0EA858000103A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9AC1ECF31E1C1FE300A243D1 /* CustomTextfieldView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9A24AD671E0EA86B000103A7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9AAFDA601E0B0AB50005FA45 /* AppDelegate.swift */,
+				9AAFDA621E0B0AB50005FA45 /* ViewController.swift */,
+				9AC1ECF51E1C27F900A243D1 /* SignUpViewController.swift */,
+				9AC1ECF71E1C31AF00A243D1 /* ForgotPasswordViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		9A24AD681E0EA873000103A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9A24AD6B1E0EA8AA000103A7 /* User.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9A24AD6D1E0EA8E2000103A7 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				9AAFDA641E0B0AB50005FA45 /* Main.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
 		9AAFDA541E0B0AB50005FA45 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +197,8 @@
 				9AAFDA741E0B0AB50005FA45 /* FootyFanTests */,
 				9AAFDA7F1E0B0AB50005FA45 /* FootyFanUITests */,
 				9AAFDA5E1E0B0AB50005FA45 /* Products */,
+				B84A3F35AAFF230E2FF10CBE /* Pods */,
+				752626129D61974432FD7EAD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +215,19 @@
 		9AAFDA5F1E0B0AB50005FA45 /* FootyFan */ = {
 			isa = PBXGroup;
 			children = (
-				9AAFDA601E0B0AB50005FA45 /* AppDelegate.swift */,
-				9AAFDA621E0B0AB50005FA45 /* ViewController.swift */,
-				9AAFDA641E0B0AB50005FA45 /* Main.storyboard */,
+				9A24AD631E0EA837000103A7 /* Reachability */,
+				9A24AD601E0EA820000103A7 /* OtherLibraries */,
+				9A24AD5D1E0EA7A4000103A7 /* Constants */,
+				9A24AD5A1E0EA770000103A7 /* CommunicationManager */,
+				9A24AD561E0EA723000103A7 /* BusinessLayer */,
+				9A24AD681E0EA873000103A7 /* Model */,
+				9A24AD661E0EA858000103A7 /* View */,
+				9A24AD671E0EA86B000103A7 /* Controllers */,
+				9A24AD6D1E0EA8E2000103A7 /* Storyboard */,
 				9AAFDA671E0B0AB50005FA45 /* Assets.xcassets */,
 				9AAFDA691E0B0AB50005FA45 /* LaunchScreen.storyboard */,
 				9AAFDA6C1E0B0AB50005FA45 /* Info.plist */,
+				9AC1ECFA1E1C362C00A243D1 /* FootyFan-Bridging-Header.h */,
 			);
 			path = FootyFan;
 			sourceTree = "<group>";
@@ -125,6 +250,15 @@
 			path = FootyFanUITests;
 			sourceTree = "<group>";
 		};
+		B84A3F35AAFF230E2FF10CBE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FDDA084CE49E8EEC16B39F30 /* Pods-FootyFan.debug.xcconfig */,
+				C581ED96AE0CDFE3B63AB674 /* Pods-FootyFan.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +266,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9AAFDA851E0B0AB50005FA45 /* Build configuration list for PBXNativeTarget "FootyFan" */;
 			buildPhases = (
+				E5D133A8C76D80B32348236F /* [CP] Check Pods Manifest.lock */,
 				9AAFDA591E0B0AB50005FA45 /* Sources */,
 				9AAFDA5A1E0B0AB50005FA45 /* Frameworks */,
 				9AAFDA5B1E0B0AB50005FA45 /* Resources */,
+				A44CC9D969B48D0FD2AB5344 /* [CP] Embed Pods Frameworks */,
+				0BFAE34B28CA0A7B1D793279 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,13 +391,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0BFAE34B28CA0A7B1D793279 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FootyFan/Pods-FootyFan-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A44CC9D969B48D0FD2AB5344 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FootyFan/Pods-FootyFan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5D133A8C76D80B32348236F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9AAFDA591E0B0AB50005FA45 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A24AD651E0EA846000103A7 /* Reachability.swift in Sources */,
+				9A24AD621E0EA82E000103A7 /* SwiftLoader.swift in Sources */,
+				9A24AD5F1E0EA7CC000103A7 /* Constants.swift in Sources */,
 				9AAFDA631E0B0AB50005FA45 /* ViewController.swift in Sources */,
 				9AAFDA611E0B0AB50005FA45 /* AppDelegate.swift in Sources */,
+				9A3DA1631E16467D0048D8F1 /* AppInstance.swift in Sources */,
+				9A24AD6C1E0EA8AA000103A7 /* User.swift in Sources */,
+				9A24AD6A1E0EA89E000103A7 /* JSONHelper.swift in Sources */,
+				9AC1ECF81E1C31AF00A243D1 /* ForgotPasswordViewController.swift in Sources */,
+				9A3DA1611E1646700048D8F1 /* Helper.swift in Sources */,
+				9A24AD5C1E0EA77F000103A7 /* CommunicationManager.swift in Sources */,
+				9A24AD581E0EA74B000103A7 /* BusinessLayer.swift in Sources */,
+				9AC1ECF61E1C27F900A243D1 /* SignUpViewController.swift in Sources */,
+				9AC1ECF41E1C1FE300A243D1 /* CustomTextfieldView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,24 +605,28 @@
 		};
 		9AAFDA861E0B0AB50005FA45 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDDA084CE49E8EEC16B39F30 /* Pods-FootyFan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FootyFan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ritesh.FootyFan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FootyFan/FootyFan-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		9AAFDA871E0B0AB50005FA45 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C581ED96AE0CDFE3B63AB674 /* Pods-FootyFan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FootyFan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ritesh.FootyFan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FootyFan/FootyFan-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -503,6 +704,7 @@
 				9AAFDA871E0B0AB50005FA45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9AAFDA881E0B0AB50005FA45 /* Build configuration list for PBXNativeTarget "FootyFanTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +713,7 @@
 				9AAFDA8A1E0B0AB50005FA45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9AAFDA8B1E0B0AB50005FA45 /* Build configuration list for PBXNativeTarget "FootyFanUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +722,7 @@
 				9AAFDA8D1E0B0AB50005FA45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
