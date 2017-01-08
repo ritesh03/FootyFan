@@ -16,6 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
+    func sharedInstance() -> AppDelegate{
+        return UIApplication.shared.delegate as! AppDelegate
+    }
+    
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
@@ -24,12 +29,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         //Twitter API Key
-        Twitter.sharedInstance().start(withConsumerKey:  StringValues.TWITTER_CONSUMER_KEY, consumerSecret: StringValues.TWITTER_CONSUMER_SECRET)
+        Twitter.sharedInstance().start(withConsumerKey:  STRINGVALUES.TWITTER_CONSUMER_KEY, consumerSecret: STRINGVALUES.TWITTER_CONSUMER_SECRET)
         
         
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         return true
     }
+    
+    //Show Loading Indicator
+    func activateView(_ view: UIView, loaderText: String) {
+        
+        var config : SwiftLoader.Config = SwiftLoader.Config()
+        config.size = 100
+        config.backgroundColor = UIColor.black
+        config.spinnerColor = UIColor.white
+        config.titleTextColor = UIColor.white
+        config.spinnerLineWidth = 2.0
+        config.foregroundColor = UIColor.black
+        config.foregroundAlpha = 0.5
+        SwiftLoader.setConfig(config)
+        SwiftLoader.show(loaderText, animated: true)
+    }
+    //Hide Loading Indicator
+    func inActivateView(_ view: UIView) {
+        
+        SwiftLoader.hide()
+    }
+    
+    
+    
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
         return FBSDKApplicationDelegate.sharedInstance().application(application, open: url,  sourceApplication: sourceApplication, annotation: annotation)
         

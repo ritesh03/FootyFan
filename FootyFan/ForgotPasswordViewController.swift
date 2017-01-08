@@ -8,8 +8,12 @@
 
 import UIKit
 
-class ForgotPasswordViewController: UIViewController {
+class ForgotPasswordViewController: BaseViewController,UITextFieldDelegate {
 
+    @IBOutlet weak var errorLabel: UILabel!
+    
+    @IBOutlet weak var tf_email: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,17 +33,33 @@ class ForgotPasswordViewController: UIViewController {
     }
 
     @IBAction func resetBtnAction(_ sender: Any) {
-    
-    
-    }
-    /*
-    // MARK: - Navigation
+        
+        errorLabel.text = ""
+        let errorStrEmail = super.istextfieldEmpty(tf_email,type: enTextFieldType.email)
+      
+        if !errorStrEmail.isEmpty {
+            errorLabel.text = errorStrEmail
+            
+        }
+        else {
+            if Reachability.isConnectedToNetwork() {
+                //Show Loader
+                
+            }
+            else  {
+                errorLabel.text = STRINGVALUES.CHECK_INTERNET_CONNECTION
+                
+            }
+        }
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
     }
-    */
+    
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {   //delegate method
+        textField.resignFirstResponder()
+        return true
+    }
+
 
 }

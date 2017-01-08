@@ -14,17 +14,14 @@ import FacebookCore
 import FacebookLogin
 
 
-class ViewController: UIViewController {
+class ViewController: BaseViewController,UITextFieldDelegate {
 
     
-    @IBOutlet weak var tf_username: UITextField!
-    
-    
-    @IBOutlet weak var tf_password: UITextField!
-    
+    @IBOutlet weak var tf_username: CustomPlaceholderField!
+    @IBOutlet weak var tf_password: CustomPlaceholderField!
     
     @IBOutlet weak var signUpBtn: UIButton!
-    
+    @IBOutlet weak var errorLabel: UILabel!
     
     
     override func viewDidLoad() {
@@ -41,26 +38,79 @@ class ViewController: UIViewController {
                                                         attributes: Attributes)
         signUpBtn.setAttributedTitle(attributeString, for: .normal)
         
-        //Adding placeholder image in uitextfield
-        let leftImageView = UIImageView()
-        leftImageView.image = UIImage(named: "user")
         
-        let leftView = UIView()
-        leftView.addSubview(leftImageView)
+        tf_username.addPlaceholder(image: "user", placeholder: "Username")
+        tf_password.addPlaceholder(image: "pass", placeholder: "Password")
         
-        leftView.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
-        leftImageView.frame = CGRect(x: 80, y: 10, width: 20, height: 20)
-        tf_username.leftViewMode = .always
-        tf_username.leftView = leftView
+        
+
         
     }
-
+    
+    override func viewDidLayoutSubviews()
+    {
+        
+        tf_username.roundedTopCorners()
+        
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
     @IBAction func loginBtnAction(_ sender: Any) {
+    
+        errorLabel.text = ""
+        
+        let errorStrEmail = super.istextfieldEmpty(tf_username,type: enTextFieldType.name)
+        let errorStrPass = super.istextfieldEmpty(tf_password,type: enTextFieldType.password)
+        if !errorStrEmail.isEmpty {
+            errorLabel.text = errorStrEmail
+            
+        }
+        else if !errorStrPass.isEmpty {
+            errorLabel.text = errorStrPass
+            
+        }
+        else {
+            if Reachability.isConnectedToNetwork() {
+                //Show Loader
+                
+                kAppDelegate.activateView(self.view, loaderText: "Loading...")
+                self.doLogin(tf_username.text!, password:tf_password.text!)
+            }
+            else  {
+                errorLabel.text = STRINGVALUES.CHECK_INTERNET_CONNECTION
+                
+            }
+        }
+
+    
+    }
+    
+    func doLogin(_ name:String,password:String) {
+        let u:User=User()
+        u.email = name
+        u.password = password
+        AppInstance.applicationInstance.user = u
+        let bizObject:BusinessLayer=BusinessLayer()
+        bizObject.loginNormal { (success) -> Void in
+            //Hide Loader
+            DispatchQueue.main.async(execute: { () -> Void in
+                kAppDelegate.inActivateView(self.view)
+                self.navigateToDashboardVC()
+                
+//                if(success) {
+//                    self.navigateToDashboardVC()
+//                }
+//                else {
+//                    self.errorLabel.text = STRINGVALUES.INVALID_CREDENTIALS
+//                }
+            })
+            
+        }
     }
 
     @IBAction func logInWithFacebookAction(_ sender: Any) {
@@ -85,6 +135,12 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {   //delegate method
+        textField.resignFirstResponder()
+        return true
+    }
+    
     
     func getUserInfoFromFacebook()
     {
@@ -128,6 +184,7 @@ class ViewController: UIViewController {
             
         }
     }
+    
 
 
 }
